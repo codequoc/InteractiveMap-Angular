@@ -1,0 +1,13 @@
+<div>
+    <button type="button" (click)="getCountryDetails($event)">Click</button>
+</div>
+<div>
+    <p>Name: {{ countryName }}<br>
+       Captial: {{ countryCap }}<br>
+       Region: {{ countryReg }}<br>
+       Income: {{ countryIncome }}<br>
+       ISO: {{ countryISO }}<br>
+       ID: {{ countryID }}
+    </p>
+</div>
+<router-outlet />
