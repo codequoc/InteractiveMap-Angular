@@ -3,17 +3,21 @@
     <a href="/">Home</a> | 
     <a href="/map">Map</a>
 </nav>
-
-<div>
-    <button type="button" (click)="getCountryDetails($event)">Click</button>
-</div>
-<div>
-    <p>Name: {{ countryName }}<br>
-       Captial: {{ countryCap }}<br>
-       Region: {{ countryReg }}<br>
-       Income: {{ countryIncome }}<br>
-       ISO: {{ countryISO }}<br>
-       ID: {{ countryID }}
-    </p>
+<div class="row">
+    <div class="box">
+        <div class="col-1">
+            <button type="button" (click)="getCountryDetails($event)">Click</button>
+            <p>Name: {{ countryName }}<br>
+            Captial: {{ countryCap }}<br>
+            Region: {{ countryReg }}<br>
+            Income: {{ countryIncome }}<br>
+            ISO: {{ countryISO }}<br>
+            ID: {{ countryID }}
+            </p>
+        </div>
+    </div>
+    <div class="col-2">
+        <app-map></app-map>
+    </div>
 </div>
 <router-outlet></router-outlet>
