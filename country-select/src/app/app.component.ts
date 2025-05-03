@@ -12,7 +12,6 @@ import { MapComponent } from "./map/map.component";
 })
 export class AppComponent implements OnInit {
 
-
   constructor(private countryService: CountryService) {}
 
   countryName = "";
@@ -33,8 +32,8 @@ export class AppComponent implements OnInit {
     })
   }
 
-  
+
   ngOnInit(): void {
-    
+
   }
 }
