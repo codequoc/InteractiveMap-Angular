@@ -9,7 +9,8 @@ export class CountryService {
 
   constructor(private http: HttpClient) { }
 
-  getCountry(countryCode: string): Observable<any> {
-    return this.http.get("https://api.worldbank.org/V2/incomeLevel/LIC/country?format=json");
+  getCountry(countryId: string): Observable<any> {
+    return this.http.get(`https://api.worldbank.org/V2/country/${countryId}?format=json`)
   }
+
 }
