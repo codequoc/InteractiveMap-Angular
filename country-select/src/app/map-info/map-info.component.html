@@ -11,6 +11,13 @@
         </div>
     </div>
     <div class="col-2">
-        <app-map></app-map>
+        <app-map 
+            (nameEvent)="showName($event)"
+            (captialEvent)="showCapital($event)"
+            (regionEvent)="showRegion($event)"
+            (incomeEvent)="showIncome($event)"
+            (isoEvent)="showISO($event)"
+            (idEvent)="showID($event)"
+        ></app-map>
     </div>
 </div>

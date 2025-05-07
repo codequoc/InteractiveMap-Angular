@@ -13,4 +13,7 @@ export class CountryService {
     return this.http.get(`https://api.worldbank.org/V2/country/${countryId}?format=json`)
   }
 
+  printCountry(countryId: string): Observable<any> {
+    return this.http.get(`https://api.worldbank.org/V2/country/${countryId}?format=json`)
+  }
 }

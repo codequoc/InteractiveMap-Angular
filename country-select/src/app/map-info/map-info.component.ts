@@ -19,4 +19,28 @@ export class MapInfoComponent {
   countryISO = "";
   countryID = "";
 
+  showName($event: any) {
+    this.countryName = $event;
+  }
+
+  showCapital($event: any) {
+    this.countryCap = $event;
+  }
+
+  showRegion($event: any) {
+    this.countryReg = $event;
+  }
+
+  showIncome($event: any) {
+    this.countryIncome = $event;
+  }
+
+  showISO($event: any) {
+    this.countryISO = $event;
+  }
+
+  showID($event: any) {
+    this.countryID = $event;
+  }
+
 }
